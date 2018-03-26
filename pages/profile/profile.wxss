@@ -1,0 +1,88 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.zan-col {
+  line-height: 30px;
+  text-align: center;
+   background-color: orange; 
+  font-size: 12px;
+  color: #fff;
+}
+
+.zan-col:nth-child(even) {
+   background-color: yellowgreen; 
+}
+
+.tips{
+  font-size: 0.55em;
+  text-align: center;
+  color: gray;
+}
+
+.level{
+  justify-content: center;
+  color: #FF5722
+}
+.can-park{
+  padding: 0 20px 0 20px;
+  font-size: 1.83em;
+}
+.car-add{
+  text-align: left;
+}
+.profile-menus{
+  text-align: end;
+}
+.ico-btn{
+  display: flex;
+  margin: 20rpx 40rpx 0 40rpx;
+  justify-content: space-between;
+}
+.car-color{
+  color: green;
+  font-size: 1.0em;
+}
+.park-ico{
+  font-size: 1.2em;
+}
+.zan-col{
+  padding-right: 10px;
+}
+.car-number{
+  background-color:royalblue;
+  margin-left: 7%;
+  margin-top: 25rpx;
+  padding-left: 1%;
+  display: flex;
+  font-size: 1.5em;
+  color: white;
+  width: 40%;
+  border: medium solid #c0c0c0;
+}
+.cars{
+  padding: 20rpx;
+  display: flex;
+ flex-wrap: wrap;
+}
+.zan-capsule{
+  font-size: 60rpx;
+}

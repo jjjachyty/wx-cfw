@@ -1,0 +1,52 @@
+<view>
+    <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">车牌号<span class="zan-c-red">*</span></view>
+      <input
+        type="text"
+        value="{{carNumber}}"
+        disabled
+        placeholder="请输入车牌号"
+       />
+    </view>
+
+    <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">品牌</view>
+      <input
+        type="text"
+        value="本田"
+        placeholder="请输入车牌号"
+        class=""/>
+    </view>
+
+    <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">型号</view>
+      <input
+        type="text"
+        value="雅阁"
+        placeholder="请输入车牌号"
+        class=""/>
+    </view>
+
+        <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">颜色</view>
+      <input
+        type="text"
+        value="珍珠白"
+        placeholder="请输入车牌号"
+        class="zan-field__input zan-cell__bd"/>
+    </view>
+    <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">购买日期</view>
+      <input
+        type="text"
+        value="2018-03-20"
+        placeholder="请输入车牌号"
+        class="zan-field__input zan-cell__bd"/>
+    </view>
+
+
+     <view class="zan-btns">
+      <button  wx:if="{{carNumber}}" class="zan-btn zan-btn--warn">取消绑定</button>  
+ <button wx:else class="zan-btn zan-btn--primary">新增</button>     
+  </view>
+</view>

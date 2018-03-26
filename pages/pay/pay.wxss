@@ -1,0 +1,19 @@
+.tips{
+  font-size: 20rpx;
+}
+view{
+  display:inherit;
+}
+.zan-c-purple{
+  color: purple;
+}
+.level{
+  padding-left: 40rpx;
+}
+.zan-panel{
+  padding-left: 8px;
+}
+.pay-description{
+  font-size: 30rpx;
+  color: grey;
+}

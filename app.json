@@ -1,0 +1,20 @@
+{
+  "pages":[
+
+        
+    "pages/profile/profile",
+            "pages/car/car",
+            
+        "pages/sigin/sigin",
+        "pages/login/login",
+    "pages/index/index",
+    "pages/serach/serach",
+                "pages/pay/pay"                
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "车方位",
+    "navigationBarTextStyle":"black"
+  }
+}

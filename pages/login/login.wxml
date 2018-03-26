@@ -1,0 +1,12 @@
+<view class="login">
+<!-- 填写手机号 -->
+<view>
+<view class="login-title">欢迎使用 车方位 停车</view>
+
+<view class="">
+  <input class='phone' value="{{phone}}" bindinput='bindphoneinput' placeholder="请输入手机号" auto-focus type='number' maxlength='11'/>
+  <button type="primary" disabled="{{disabled}}" bindtap="next" > 下一步 </button>
+</view>
+</view>
+
+</view>

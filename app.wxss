@@ -1,0 +1,13 @@
+/**app.wxss**/
+@import 'ui/index.wxss';
+
+@import 'style/stylesheet.wxss';
+
+.hide{
+ display: none;
+}
+.show{
+ display: block;
+}
+
+

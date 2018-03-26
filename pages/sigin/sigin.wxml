@@ -1,0 +1,13 @@
+<!-- 验证手机号 -->
+<view class='container'>
+<view class="login-title">验证码已发送至</view>
+
+<view class="phone-lable">15520010009 
+<text wx:if="{{isshow}}" class="resend"  bindtap='toresend'>重新发送</text>
+<text wx:if="{{!isshow}}" class="resend">{{text}}s</text>
+</view>
+<view class="">
+  <input class='phone' bindinput='bindphoneinput' placeholder="请输入短信验证码" auto-focus type='number' maxlength='4'/>
+  <button  class='sigin-button' bindtap="primary"> 登录 </button>
+</view>
+</view>

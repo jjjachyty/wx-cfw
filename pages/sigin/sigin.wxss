@@ -1,0 +1,23 @@
+/* pages/sigin/sigin.wxss */
+.phone-lable{
+  margin: 10px 0px 10px 10px;
+  color: darkgray;
+}
+.resend{
+  font-size: 10px;
+  color: cornflowerblue;
+  padding: 0 0 0 100px;
+}
+.code{
+
+}
+.sigin-button{
+  border-radius: 20px;
+  color: white;
+  background-color: #01579B;
+}
+
+page {  
+  display: block;  
+  min-height: 100%;  
+}

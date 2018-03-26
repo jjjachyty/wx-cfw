@@ -1,0 +1,71 @@
+<import src="/ui/capsule/index.wxml" />
+
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/imgs/profile.png" background-size="cover"></image>
+      <text class="userinfo-nickname">15520010009</text>
+    </block>
+  </view>
+  <view class="zan-panel zan-panel--without-border">
+
+    <view class="zan-cell level">
+      <text class='tips'>能停 </text>
+      <text class='can-park'>80%</text>
+      <text class='tips'>车位 </text>
+    </view>
+  </view>
+
+  <view class="zan-panel ">
+    <view class="zan-row">
+      <view class="zan-col zan-col-12" bindtap='toBuy'>
+        <i class="fa fa-shopping-cart"></i>
+
+        购买/升级等级
+
+      </view>
+      <view class="zan-col zan-col-12">
+        <view class="fa fa-share-alt"></view>
+
+        共享我的车位
+        <!-- <view class="zan-icon zan-icon-cart"  style="font-size:2em;color: #ff4343;"></view> -->
+
+      </view>
+    </view>
+  </view>
+  <view class='ico-btn'>
+    <view>
+      <i class="fa fa-car car-color"></i>
+
+    </view>
+    <view class='profile-menus'>
+      <button bindtap='getCar' class="zan-btn zan-btn--mini zan-btn--primary zan-btn--plain">
+        <i class="fa fa-plus car-add" /> 新增汽车
+      </button>
+    </view>
+  </view>
+
+  <view class='cars'>
+    <view wx:for="{{cars}}" class='car-number' data-number="{{item.prfx + item.number}}" bindtap='getCar'>
+      <view>{{item.prfx}}</view>
+      .
+      <view>{{item.number}}</view>
+    </view>
+
+  </view>
+  <view class="zan-panel-title park-ico fa  fa-product-hunt" style='color: #4CAF50;'></view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">爱家橄榄园</view>
+      <view class="zan-cell__ft">265号</view>
+
+    </view>
+  </view>
+
+  <view class="zan-panel">
+    <view class="zan-btns">
+      <button class="zan-btn">切换账号</button>
+    </view>
+  </view>
+</view>
