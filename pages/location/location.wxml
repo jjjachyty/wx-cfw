@@ -18,7 +18,7 @@
     </radio-group>
   </view>
 
-
+<view></view>
    <button bindtap='uploadProperty'>上传产权证明文件</button>
 
 </view>
