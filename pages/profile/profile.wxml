@@ -25,10 +25,10 @@
         购买/升级等级
 
       </view>
-      <view class="zan-col zan-col-12">
+      <view class="zan-col zan-col-12" bindtap='shareLocation'>
         <view class="fa fa-share-alt"></view>
 
-        共享我的车位
+        绑定我的车位
         <!-- <view class="zan-icon zan-icon-cart"  style="font-size:2em;color: #ff4343;"></view> -->
 
       </view>
@@ -67,12 +67,15 @@
   </view>
 
   <view class="zan-panel">
-    <view class="zan-cell zan-cell--access">
+    <view class="zan-cell zan-cell--access" bindtap='toMyLocation'>
       <view class="zan-cell__bd">爱家橄榄园</view>
       <view class="zan-cell__ft">265号</view>
 
     </view>
   </view>
+
+
+
 
   <view class="zan-panel">
     <view class="zan-btns">

@@ -50,5 +50,14 @@ Page({
     wx.navigateTo({
       url: '../../pages/car/car?carNumber=' + carNumber,
     })
+  },
+  shareLocation(e) {
+    wx.navigateTo({
+      url: '../../pages/location/location',
+    })
+  }, toMyLocation(e) {
+    wx.navigateTo({
+      url: '../../pages/location/mylocation',
+    })
   }
 })

@@ -1,5 +1,5 @@
 <view>
-  <view class="zan-panel-title">车位关系</view>
+  <view class="zan-panel-title">与车位关系</view>
   <view class="zan-panel">
   <radio-group class="radio-group" bindchange="radioChange">
     <view class="zan-col zan-col-12">
@@ -18,7 +18,23 @@
     </radio-group>
   </view>
 
-<view></view>
-   <button bindtap='uploadProperty'>上传产权证明文件</button>
+<view>
+   <text class='uploadProperty' bindtap='uploadProperty'>上传证明文件(产权证/合同)</text>
 
+<!-- <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx"/>  -->
+</view>
+
+<view>
+<text class='uploadProperty' bindtap='uploadIdCard1'>上传身份证正面</text>
+<!-- <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx"/>  -->
+</view>
+
+
+<view>
+<text class='uploadProperty' bindtap='uploadIdCard1'>上传身份证反面</text>
+<!-- <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx"/>  -->
+</view>
+ <view class="zan-btns">
+      <button class="zan-btn zan-btn--primary">申请绑定</button>
+</view>
 </view>

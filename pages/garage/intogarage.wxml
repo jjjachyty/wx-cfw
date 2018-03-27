@@ -1,0 +1,51 @@
+<view>
+  <view class="zan-panel-title">请确认信息</view>
+
+  <view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">位置</view>
+      <view class="zan-cell__ft">爱加橄榄园</view>
+    </view>
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">入口</view>
+      <view class="zan-cell__ft">东南门</view>
+    </view>
+    <view class="zan-cell">
+      <view class="zan-cell__bd">车价</view>
+      <view class="zan-cell__ft">¥ 5元/小时</view>
+    </view>
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">入库时间</view>
+      <view class="zan-cell__ft">2018-03-25 12:00:00</view>
+    </view>
+
+  <view class="zan-panel-title">系统分配车位</view>
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">楼层</view>
+      <view class="zan-cell__ft">负3层</view>
+    </view>
+    <view class="zan-cell">
+      <view class="zan-cell__bd">区域</view>
+      <view class="zan-cell__ft">A1</view>
+    </view>
+    <view class="zan-cell">
+      <view class="zan-cell__bd">编号</view>
+      <view class="zan-cell__ft">256</view>
+    </view>
+
+
+  </view>
+
+
+    <view class="zan-btns">
+    <button class="zan-btn  zan-btn--primary">进入</button>
+    </view>
+
+
+   
+
+
+</view>

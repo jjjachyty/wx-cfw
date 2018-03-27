@@ -1,0 +1,27 @@
+<view>
+  <view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">地址</view>
+      <view class="zan-cell__ft">爱家橄榄园</view>
+    </view>
+
+        <view class="zan-cell">
+      <view class="zan-cell__bd">楼层</view>
+      <view class="zan-cell__ft">负3楼</view>
+    </view>
+
+        <view class="zan-cell">
+      <view class="zan-cell__bd">区域</view>
+      <view class="zan-cell__ft">A</view>
+    </view>
+
+        <view class="zan-cell">
+      <view class="zan-cell__bd">编号</view>
+      <view class="zan-cell__ft">编号</view>
+    </view>
+
+        <view class="zan-btns">
+    <button class="zan-btn zan-btn--warn zan-btn--plain">解除绑定</button>
+      </view>
+  </view>
+</view>

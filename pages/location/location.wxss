@@ -4,3 +4,11 @@
    padding-left: 20rpx;
    color: grey;
 }
+.uploadProperty{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: gray;
+  padding-top: 20%;
+  font-size: 30rpx;
+}
