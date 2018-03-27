@@ -1,0 +1,6 @@
+/* pages/location/location.wxss */
+.description{
+   font-size: 20rpx;
+   padding-left: 20rpx;
+   color: grey;
+}

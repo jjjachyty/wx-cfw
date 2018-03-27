@@ -12,7 +12,7 @@ Page({
       iconPath: '/imgs/location.png',
       position: {
         left: 10,
-        top: 450,
+        top: 410,
         width: 30,
         height: 30
       },
@@ -22,7 +22,7 @@ Page({
       iconPath: '/imgs/serach.png',
       position: {
         left: 10,
-        top: 400,
+        top: 380,
         width: 30,
         height: 30
       },
@@ -31,10 +31,10 @@ Page({
         id: 3,
         iconPath: '/imgs/avatar.png',
         position: {
-          left: 250,
-          top: 420,
-          width: 50,
-          height: 50
+          left: 10,
+          top: 440,
+          width: 40,
+          height: 40
         },
         clickable: true
       }]

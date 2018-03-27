@@ -1,0 +1,69 @@
+<scroll-view class='order-scroll' scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class='container'>
+
+    
+    <view class="zan-panel">
+      <view class="zan-card">
+        <!-- 卡片左侧商品图片 -->
+        <!-- <view class="zan-card__thumb">
+          <text class='carNmuber'>渝D.DZ731</text>
+        </view> -->
+        <!-- 卡片右侧详情描述 -->
+        <view class="">
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col zan-c-red">停车中</view>
+            <view class="zan-card__left-col zan-c-blue">
+               渝D DZ731
+            </view>
+          </view>
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col">A1 256号</view>
+            <view class="zan-card__left-col zan-ellipsis--l2">
+              爱加橄榄园
+            </view>
+          </view>
+          <!-- 商品附属信息展示行 -->
+          <view class="zan-card__detail-row zan-c-blue-darker">
+            <view class="zan-card__right-col"> - </view>
+            <view class="zan-card__left-col">
+              03/25 13:25:21
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="zan-panel">
+      <view class="zan-card">
+        <!-- 卡片左侧商品图片 -->
+        <!-- <view class="zan-card__thumb">
+          <text class='carNmuber'>渝D.DZ731</text>
+        </view> -->
+        <!-- 卡片右侧详情描述 -->
+        <view class="">
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col">已出库</view>
+            <view class="zan-card__left-col zan-c-blue">
+               渝D DZ731
+            </view>
+          </view>
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col">A1 256号</view>
+            <view class="zan-card__left-col zan-ellipsis--l2">
+              爱加橄榄园
+            </view>
+          </view>
+          <!-- 商品附属信息展示行 -->
+          <view class="zan-card__detail-row zan-c-blue-darker">
+            <view class="zan-card__right-col"> 03/25 15:25:21 </view>
+            <view class="zan-card__left-col">
+              03/25 13:25:21
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</scroll-view>

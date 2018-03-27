@@ -1,3 +1,24 @@
 <view>
+  <view class="zan-panel-title">车位关系</view>
+  <view class="zan-panel">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <view class="zan-col zan-col-12">
+      <view class="zan-panel zan-panel--without-border zan-c-blue">
+        <view class="levle"><radio value="800" checked="true" color='green'/>我有产权证
+        <text class="description">\n(确保车位产权证在手，且未对外出租)</text></view>
+      </view>
+    </view>
+    <view class="zan-col zan-col-12">
+      <view class="zan-panel zan-panel--without-border zan-c-blue">
+        <view class="levle"><radio value="750"  color='green'/>我有租赁合同
+        <text class="description">\n(确保合同在手,且房东未对外出租)</text>
+        </view>
+      </view>
+    </view>
+    </radio-group>
+  </view>
+
+
+   <button bindtap='uploadProperty'>上传产权证明文件</button>
 
 </view>

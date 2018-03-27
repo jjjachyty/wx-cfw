@@ -10,4 +10,14 @@
  display: block;
 }
 
-
+.divider{
+    border: none;
+    display: block;
+    height: 1px;
+    min-height: 1px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    background-color: gainsboro;
+}

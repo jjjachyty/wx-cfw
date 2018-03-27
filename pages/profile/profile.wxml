@@ -41,7 +41,7 @@
     </view>
     <view class='profile-menus'>
       <button bindtap='getCar' class="zan-btn zan-btn--mini zan-btn--primary zan-btn--plain">
-        <i class="fa fa-plus car-add" /> 新增汽车
+        <i class="fa fa-plus car-add" /> 绑定汽车
       </button>
     </view>
   </view>
@@ -54,7 +54,18 @@
     </view>
 
   </view>
-  <view class="zan-panel-title park-ico fa  fa-product-hunt" style='color: #4CAF50;'></view>
+
+
+  <view class='ico-btn'>
+    <view>
+      <i class="fa fa-product-hunt car-color"></i>
+
+    </view>
+    <view class='profile-menus'>
+        <text>👣</text>
+    </view>
+  </view>
+
   <view class="zan-panel">
     <view class="zan-cell zan-cell--access">
       <view class="zan-cell__bd">爱家橄榄园</view>

@@ -1,20 +1,19 @@
 {
-  "pages":[
-
-        
+  "pages": [
+    "pages/location/location",
     "pages/profile/profile",
-            "pages/car/car",
-            
-        "pages/sigin/sigin",
-        "pages/login/login",
+    "pages/tracks/tracks",
     "pages/index/index",
+    "pages/car/car",
+    "pages/sigin/sigin",
+    "pages/login/login",
     "pages/serach/serach",
-                "pages/pay/pay"                
+    "pages/pay/pay"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "车方位",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

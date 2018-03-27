@@ -86,3 +86,8 @@
 .zan-capsule{
   font-size: 60rpx;
 }
+.tracks{
+  float: right;
+  position: relative;
+  font-size: 20px;
+}

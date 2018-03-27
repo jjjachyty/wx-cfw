@@ -1,0 +1,14 @@
+/* pages/order/order.wxss */
+.carNmuber{
+  font-size: 34rpx;
+  color:cornflowerblue;
+  text-align: center;
+  float:none;
+  top: 40%; 
+  position: relative;
+}
+.order-scroll{
+}
+
+.zan-card{
+}
