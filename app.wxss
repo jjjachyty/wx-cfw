@@ -21,3 +21,9 @@
     width: 100%;
     background-color: gainsboro;
 }
+
+.primary-btn{
+  background-color:cornflowerblue;
+  color: white;
+  border-radius: 30rpx;
+}

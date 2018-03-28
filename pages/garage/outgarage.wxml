@@ -30,7 +30,7 @@
 
     <view class="zan-cell">
       <view class="zan-cell__bd">合计</view>
-      <view class="zan-cell__ft zan-c-red">¥ 50元</view>
+      <view class="zan-cell__ft zan-c-red">50元</view>
     </view>
     <view class="zan-cell">
       <view class="zan-cell__bd">我的套餐</view>
@@ -44,7 +44,7 @@
 
 
     <view class="zan-btns">
-    <button class="zan-btn  zan-btn--primary">出库</button>
+    <button class="zan-btn  primary-btn">支付</button>
     </view>
 
 

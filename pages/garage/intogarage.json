@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "进入车库"
+  "navigationBarTitleText": "进入车库",
+  "usingComponents": {
+    "keyboard": "/components/Keyboard/keyboard"
+  }
 }

@@ -1,0 +1,20 @@
+<view class='keyboard'>
+  <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{abbreviation}}">
+    {{item}}
+  </button>
+</view>
+<view class='keyboard'>
+  <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{numeral}}">
+    {{item}}
+  </button>
+</view>
+<view class='keyboard'>
+  <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{alphabet}}">
+    {{item}}
+    
+  </button>
+
+  <button class="abbreviation-btn-ok">删除</button>
+    <button class="abbreviation-btn-ok">确定</button>
+
+</view>

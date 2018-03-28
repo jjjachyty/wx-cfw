@@ -1,0 +1,18 @@
+.into-tips{
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 30rpx;
+}
+
+
+.popup-example--center {
+  border-radius: 4px;
+  font-size: 30rpx;
+  width: 80%;
+}
+
+.popup-example--bottom .zan-popup__container {
+  left: 0;
+  right: 0;
+}

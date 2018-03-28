@@ -1,7 +1,8 @@
 {
   "pages": [
+        "pages/garage/intogarage",
     "pages/garage/outgarage",
-    "pages/garage/intogarage",
+
     "pages/profile/profile",
     "pages/location/location",
         "pages/location/mylocation",
