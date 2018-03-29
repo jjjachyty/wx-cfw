@@ -33,6 +33,7 @@ margin-right:auto;
 padding-left:14px;
 padding-right:14px; */
 /* box-sizing:border-box; */
+padding: 0px;
 height: 50rpx;
 font-size:30rpx;
  text-align: right;
@@ -42,5 +43,33 @@ border-radius:5px;
 -webkit-tap-highlight-color:transparent;
 overflow:hidden;
 color:#000000;
+background-color:#F8F8F8;
+}
+
+.table {
+border:1px solid #c0c0c0;
+border-right: 0;
+border-bottom: 0;
+width: 98%;
+}
+.tr {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.th,.td {
+padding: 2px;
+border-bottom: 1px solid white;
+border-right: 1px solid white;
+text-align: center;
+width:100%
+}
+.th {
+font-weight: 10rpx;
+background-color:#F8F8F8;
+}
+
+.th-number {
+font-weight: 10rpx;
 background-color:#F8F8F8;
 }

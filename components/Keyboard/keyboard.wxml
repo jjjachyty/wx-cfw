@@ -1,5 +1,5 @@
 <view class='keyboard'>
-  <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{abbreviation}}">
+  <!-- <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{abbreviation}}">
     {{item}}
   </button>
 </view>
@@ -15,6 +15,97 @@
   </button>
 
   <button class="abbreviation-btn-ok">删除</button>
-    <button class="abbreviation-btn-ok">确定</button>
+    <button class="abbreviation-btn-ok">确定</button> -->
+<view class="table">
+   <view class="tr">
+      <view class="th">
+        冀</view>
+      <view class="th"> 豫</view>
+      <view class="th"> 云 </view>
+      <view class="th">辽</view>
+      <view class="th"> 黑</view>
+      <view class="th"> 湘</view>
+      <view class="th"> 皖</view>
+      <view class="th"> 鲁</view>
+      <view class="th"> 新</view>
+      <view class="th"> 苏 </view>
+      <view class="th">浙</view>
+      <view class="th"> 赣</view>
+      <view class="th"> 鄂</view>
+      <view class="th"> 桂 </view>
+      <view class="th">甘</view>
+    </view>
+    <view class="tr">
+      <view class="th"> 晋
+      </view>
+      <view class="th">
 
+        蒙</view>
+      <view class="th"> 陕 </view>
+      <view class="th">吉 </view>
+      <view class="th">闽 </view>
+      <view class="th">贵 </view>
+      <view class="th">川 </view>
+      <view class="th">青</view>
+      <view class="th"> 藏</view>
+      <view class="th"> 琼 </view>
+      <view class="th">宁 </view>
+      <view class="th"> 粤 </view>
+    </view>
+    <view class="tr">
+      <view class="th">京</view>
+      <view class="th"> 津 </view>
+      <view class="th">沪</view>
+      <view class="th">渝</view>
+    </view>
+    <view class="tr">
+      <view class="th-number"> 0</view>
+      <view class="th">1</view>
+      <view class="th"> 2 </view>
+      <view class="th">3 </view>
+      <view class="th">4 </view>
+      <view class="th">5 </view>
+      <view class="th">6 </view>
+      <view class="th">7</view>
+      <view class="th"> 8</view>
+      <view class="th"> 9 </view>
+    </view>
+
+        <view class="tr">
+      <view class="th">Q</view>
+      <view class="th">W</view>
+      <view class="th">E</view>
+      <view class="th">R</view>
+      <view class="th">T</view>
+      <view class="th">Y</view>
+      <view class="th">U</view>
+      <view class="th">I</view>
+      <view class="th">O</view>
+      <view class="th">P</view>
+    </view>
+        <view class="tr">
+      <view class="th">A</view>
+      <view class="th">S</view>
+      <view class="th">D</view>
+      <view class="th">F</view>
+      <view class="th">G</view>
+      <view class="th">H</view>
+      <view class="th">J</view>
+      <view class="th">K</view>
+      <view class="th">L</view>
+    </view>
+
+            <view class="tr">
+      <view class="th">Z</view>
+      <view class="th">X</view>
+      <view class="th">C</view>
+      <view class="th">V</view>
+      <view class="th">B</view>
+      <view class="th">N</view>
+      <view class="th">M</view>
+      <view class="th">删除</view>
+      <view class="th">确定</view>
+    </view>
+
+  </view>
 </view>

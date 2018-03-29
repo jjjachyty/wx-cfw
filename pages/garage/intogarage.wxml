@@ -67,6 +67,7 @@
     <view class="zan-cell zan-field">
       <input
         type="text"
+        bindfocus='showKeyboard'
         placeholder="请输入车牌号:如 渝DDZ731"
         class="zan-field__input zan-cell__bd"/>
       <view class="zan-cell__ft">
@@ -79,15 +80,15 @@
     </view>
   </view>
 
-
+ 
   <view class="popup-example--bottom zan-popup zan-popup--bottom {{ showKeyboardPopup ? 'zan-popup--show' : ''}}">
     <view class="zan-popup__mask" catchtap="toggleBottomPopup"></view>
     <view class="zan-popup__container">
      <keyboard id="keyboard"> </keyboard>
     </view>
-  </view>
+  </view> 
 
 
-<button type="primary" bindtap="showKeyboard"> ClickMe! </button>
+<!-- <button type="primary" bindtap="showKeyboard"> ClickMe! </button> -->
 
 </view>
