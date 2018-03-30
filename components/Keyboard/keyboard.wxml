@@ -1,4 +1,4 @@
-<view class='keyboard'>
+<view class='keyboard' hidden='{{!isShow}}'>
   <!-- <button class="abbreviation-btn" catchtap="toggleBottomPopup" wx:for="{{abbreviation}}">
     {{item}}
   </button>
@@ -18,93 +18,94 @@
     <button class="abbreviation-btn-ok">确定</button> -->
 <view class="table">
    <view class="tr">
-      <view class="th">
+      <view class="th" catchtap='_keyPress' data-key="豫">
         冀</view>
-      <view class="th"> 豫</view>
-      <view class="th"> 云 </view>
-      <view class="th">辽</view>
-      <view class="th"> 黑</view>
-      <view class="th"> 湘</view>
-      <view class="th"> 皖</view>
-      <view class="th"> 鲁</view>
-      <view class="th"> 新</view>
-      <view class="th"> 苏 </view>
-      <view class="th">浙</view>
-      <view class="th"> 赣</view>
-      <view class="th"> 鄂</view>
-      <view class="th"> 桂 </view>
-      <view class="th">甘</view>
-    </view>
-    <view class="tr">
-      <view class="th"> 晋
-      </view>
-      <view class="th">
+      <view class="th" catchtap='_keyPress' data-key="豫" catchtap='_keyPress' data-key="豫">豫</view>
+      <view class="th" catchtap='_keyPress' data-key="云"> 云 </view>
+      <view class="th" catchtap='_keyPress' data-key="辽">辽</view>
+      <view class="th" catchtap='_keyPress' data-key="黑"> 黑</view>
+      <view class="th" catchtap='_keyPress' data-key="湘"> 湘</view>
+      <view class="th" catchtap='_keyPress' data-key="皖"> 皖</view>
+      <view class="th" catchtap='_keyPress' data-key="鲁"> 鲁</view>
+      <view class="th" catchtap='_keyPress' data-key="新"> 新</view>
 
-        蒙</view>
-      <view class="th"> 陕 </view>
-      <view class="th">吉 </view>
-      <view class="th">闽 </view>
-      <view class="th">贵 </view>
-      <view class="th">川 </view>
-      <view class="th">青</view>
-      <view class="th"> 藏</view>
-      <view class="th"> 琼 </view>
-      <view class="th">宁 </view>
-      <view class="th"> 粤 </view>
+      
     </view>
     <view class="tr">
-      <view class="th">京</view>
-      <view class="th"> 津 </view>
-      <view class="th">沪</view>
-      <view class="th">渝</view>
+          <view class="th" catchtap='_keyPress' data-key="苏">苏</view>
+      <view class="th" catchtap='_keyPress' data-key="浙">浙</view>
+    <view class="th" catchtap='_keyPress' data-key="赣"> 赣</view>
+      <view class="th" catchtap='_keyPress' data-key="鄂"> 鄂</view>
+      <view class="th" catchtap='_keyPress' data-key="桂"> 桂 </view>
+      <view class="th" catchtap='_keyPress' data-key="甘">甘</view>
+      <view class="th" catchtap='_keyPress' data-key="晋"> 晋</view>
+      <view class="th" catchtap='_keyPress' data-key="蒙">蒙</view>
+      <view class="th" catchtap='_keyPress' data-key="陕"> 陕 </view>
+
+      
     </view>
     <view class="tr">
-      <view class="th-number"> 0</view>
-      <view class="th">1</view>
-      <view class="th"> 2 </view>
-      <view class="th">3 </view>
-      <view class="th">4 </view>
-      <view class="th">5 </view>
-      <view class="th">6 </view>
-      <view class="th">7</view>
-      <view class="th"> 8</view>
-      <view class="th"> 9 </view>
+          <view class="th" catchtap='_keyPress' data-key="吉">吉 </view>
+      <view class="th" catchtap='_keyPress' data-key="闽">闽 </view>
+      <view class="th" catchtap='_keyPress' data-key="贵">贵 </view>
+      <view class="th" catchtap='_keyPress' data-key="川">川 </view>
+    <view class="th" catchtap='_keyPress' data-key="青">青</view>
+      <view class="th" catchtap='_keyPress' data-key="藏"> 藏</view>
+      <view class="th" catchtap='_keyPress' data-key="琼"> 琼 </view>
+      <view class="th" catchtap='_keyPress' data-key="宁">宁 </view>
+      <view class="th" catchtap='_keyPress' data-key="粤"> 粤 </view>
+    </view>
+    <view class="tr">
+            <view class="th" catchtap='_keyPress' data-key="京">京</view>
+      <view class="th" catchtap='_keyPress' data-key="津"> 津 </view>
+      <view class="th" catchtap='_keyPress' data-key="沪">沪</view>
+      <view class="th" catchtap='_keyPress' data-key="渝">渝</view>
+    </view>
+    <view class="tr">
+       <view class="th number" catchtap='_keyPress' data-key="1" >1</view>
+      <view class="th number" catchtap='_keyPress' data-key="2"> 2 </view>
+      <view class="th number" catchtap='_keyPress' data-key="3">3 </view>
+      <view class="th number" catchtap='_keyPress' data-key="4">4 </view>
+      <view class="th number" catchtap='_keyPress' data-key="5">5 </view>
+      <view class="th number" catchtap='_keyPress' data-key="6">6 </view>
+      <view class="th number" catchtap='_keyPress' data-key="7">7</view>
+      <view class="th number" catchtap='_keyPress' data-key="8"> 8</view>
+      <view class="th number" catchtap='_keyPress' data-key="9"> 9 </view> 
     </view>
 
         <view class="tr">
-      <view class="th">Q</view>
-      <view class="th">W</view>
-      <view class="th">E</view>
-      <view class="th">R</view>
-      <view class="th">T</view>
-      <view class="th">Y</view>
-      <view class="th">U</view>
-      <view class="th">I</view>
-      <view class="th">O</view>
-      <view class="th">P</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="Q">Q</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="W">W</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="E">E</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="R">R</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="T">T</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="Y">Y</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="U">U</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="I">I</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="O">O</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="P">P</view>
     </view>
         <view class="tr">
-      <view class="th">A</view>
-      <view class="th">S</view>
-      <view class="th">D</view>
-      <view class="th">F</view>
-      <view class="th">G</view>
-      <view class="th">H</view>
-      <view class="th">J</view>
-      <view class="th">K</view>
-      <view class="th">L</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="A">A</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="S">S</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="D">D</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="F">F</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="G">G</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="H">H</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="J">J</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="K">K</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="L">L</view>
     </view>
 
             <view class="tr">
-      <view class="th">Z</view>
-      <view class="th">X</view>
-      <view class="th">C</view>
-      <view class="th">V</view>
-      <view class="th">B</view>
-      <view class="th">N</view>
-      <view class="th">M</view>
-      <view class="th">删除</view>
-      <view class="th">确定</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="Z">Z</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="X">X</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="C">C</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="V">V</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="B">B</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="N">N</view>
+      <view class="th alphabet " catchtap='_keyPress' data-key="M">M</view>
+      <view class="th delete" catchtap='_delKey'>←</view>
     </view>
 
   </view>

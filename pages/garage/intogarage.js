@@ -7,7 +7,11 @@ Page({
   data: {
     showPopup: false,
     showKeyboardPopup:true,
-    parkCarNumber:''
+    parkCarNumber:'',
+    showSave:false,
+    placeholder:"请录入车牌号:如渝DDZ731",
+    showPlaceHolder:true,
+    toView:'blue'
   },
 
   /**
@@ -22,7 +26,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.dialog = this.selectComponent("#dialog");
     this.keyboard = this.selectComponent("#keyboard");
 
   },
@@ -69,10 +72,16 @@ Page({
   
   },
   showKeyboard () {
-    
+    var that = this
+    this.keyboard.showKeyboard()
     this.setData({
-      showKeyboardPopup: !this.data.showKeyboardPopup,
-    });
+      showPlaceHolder:false,
+      toView: 'keyboardView'
+    })
+
+    
+   
+
   },
   togglePopup(e) {
     this.setData({
@@ -84,6 +93,23 @@ Page({
         parkCarNumber: e.currentTarget.dataset.name || ''
       });
       
+    }
+
+  },
+  keyPress(val){
+    this.setData({
+      parkCarNumber: this.keyboard.getCarNumber()
+    })
+    if (this.data.parkCarNumber.length === 7){
+      this.setData({ showSave:true})
+    }else{
+      this.setData({ showSave: false })
+    }
+
+    if (this.data.parkCarNumber.length === 0) {
+      this.setData({ showPlaceHolder: true })
+    } else {
+      this.setData({ showPlaceHolder: false })
     }
 
   }

@@ -9,10 +9,8 @@
 .popup-example--center {
   border-radius: 4px;
   font-size: 30rpx;
-  width: 80%;
+  width: 100%;
 }
 
-.popup-example--bottom .zan-popup__container {
-  left: 0;
-  right: 0;
-}
+
+
