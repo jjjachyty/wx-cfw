@@ -5,13 +5,13 @@
     <view class="zan-col zan-col-12">
       <view class="zan-panel zan-panel--without-border zan-c-blue">
         <view class="levle"><radio value="800" checked="true" color='green'/>我有产权证
-        <text class="description">\n(确保车位产权证在手，且未对外出租)</text></view>
+        <text class="description">\n(拥有车位产权证，且未对外出租)</text></view>
       </view>
     </view>
     <view class="zan-col zan-col-12">
       <view class="zan-panel zan-panel--without-border zan-c-blue">
         <view class="levle"><radio value="750"  color='green'/>我有租赁合同
-        <text class="description">\n(确保合同在手,且房东未对外出租)</text>
+        <text class="description">\n(拥有租赁合同,且房东未再出租)</text>
         </view>
       </view>
     </view>

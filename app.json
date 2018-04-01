@@ -1,20 +1,20 @@
 {
   "pages": [
-        "pages/garage/intogarage",
-    "pages/garage/outgarage",
-
-    "pages/profile/profile",
-    "pages/location/location",
-        "pages/location/mylocation",
-
+        "pages/index/index",
         
+        "pages/profile/profile",        
+    "pages/pay/pay",
+    "pages/garage/intogarage",
+    "pages/webview/webview",
+    "pages/garage/chosecar",
+    "pages/garage/outgarage",
+    "pages/location/location",
+    "pages/location/mylocation",
     "pages/tracks/tracks",
-    "pages/index/index",
     "pages/car/car",
     "pages/sigin/sigin",
     "pages/login/login",
-    "pages/serach/serach",
-    "pages/pay/pay"
+    "pages/serach/serach"
   ],
   "window": {
     "backgroundTextStyle": "light",

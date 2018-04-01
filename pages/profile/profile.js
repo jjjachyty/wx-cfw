@@ -59,5 +59,10 @@ Page({
     wx.navigateTo({
       url: '../../pages/location/mylocation',
     })
+  },
+  outgarage(){
+    wx.navigateTo({
+      url: '../../pages/garage/chosecar?inout=2',
+    })
   }
 })

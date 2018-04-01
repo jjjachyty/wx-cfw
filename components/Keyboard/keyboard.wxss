@@ -1,50 +1,7 @@
 .keyboard{
-  display: flex;
-  flex-flow: row;
-  flex-wrap:wrap;
+   margin-top: 20rpx;
 }
-.abbreviation-btn{
-  width: 10rpx;
-  float: right;
-/* display:block; */
-/* margin-left:auto;
-margin-right:auto;
-padding-left:14px;
-padding-right:14px; */
-/* box-sizing:border-box; */
-font-size:40rpx;
- text-align: right;
- justify-content: center; 
-text-decoration:aliceblue;
- line-height:1.5rem; 
-border-radius:5px;
--webkit-tap-highlight-color:transparent;
-overflow:hidden;
-color:#000000;
-background-color:#F8F8F8;
 
-}
-.abbreviation-btn-ok{
-    width: 150rpx;
-  float: right;
-/* display:block; */
-/* margin-left:auto;
-margin-right:auto;
-padding-left:14px;
-padding-right:14px; */
-/* box-sizing:border-box; */
-padding: 0px;
-height: 50rpx;
-font-size:30rpx;
- text-align: right;
- justify-content: center; 
-text-decoration:aliceblue;
-border-radius:5px;
--webkit-tap-highlight-color:transparent;
-overflow:hidden;
-color:#000000;
-background-color:#F8F8F8;
-}
 
 .table {
 border:1px solid #c0c0c0;

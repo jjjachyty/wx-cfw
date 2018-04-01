@@ -1,3 +1,5 @@
+<import src="/ui/noticebar/index.wxml" />
+
 <view>
   <view class="zan-panel-title">请确认信息</view>
 
@@ -20,6 +22,14 @@
       <view class="zan-cell__bd">入库时间</view>
       <view class="zan-cell__ft">2018-03-25 12:00:00</view>
     </view>
+
+        <view class="zan-panel">
+      <!-- <image bindtap='viewADS' class='intoADS'src="{{ads.url}}"></image> -->
+          <template
+      is="zan-noticebar"
+      data="{{ ...movable, componentId: 'movable'  }}"
+    ></template>
+        </view>
 
     <view class="zan-panel-title">系统分配车位</view>
 
@@ -46,55 +56,6 @@
   <view wx:if="{{parkCarNumber}}">
     <text class="into-tips"> 5S 后开始计费 </text>
   </view>
-
-
-  <view class="zan-popup chose-car {{ showPopup ? 'zan-popup--show' : ''}}">
-
-     <view class="zan-popup__mask">
-    </view> 
-
-    <view class="zan-popup__container popup-example--center">
-      <view class="zan-panel-title">选择车辆</view>
-      <view class="zan-btns">
-        <button class="zan-btn primary-btn" bindtap="togglePopup" data-name="渝DDZ732">
-          渝DDZ732
-        </button>
-
-        <button class="zan-btn primary-btn" bindtap="togglePopup" data-name="渝DDZ731">
-          渝DDZ731
-        </button>
-      </view>
-      <view class="zan-panel-title">其他车牌</view>
-   
-        <view id="pannel" class="zan-cell zan-field">
-          <view bindtap='showKeyboard' placeholder="请输入车牌号:如 渝DDZ731" class="zan-field__input input">
-            <text class='placeholder' hidden='{{!showPlaceHolder}}'>{{placeholder}}</text> {{parkCarNumber}}
-          </view>
-          <view class="zan-cell__ft">
-            <button id="saveBtn" class="zan-btn zan-btn--primary" hidden='{{!showSave}}'>确定</button>
-          </view>
-        </view>
- <keyboard id="keyboard" bind:keyPress="keyPress" bind:delKey="delKey"> </keyboard>
-
-
-
-    </view>
-
-     <!-- <view   class='popup-example--bottom zan-popup zan-popup--bottom zan-popup--show'> -->
-     <!-- <view id="keyboardView" class="zan-popup__container1 popup-keyboard--center">
-      <keyboard id="keyboard" bind:keyPress="keyPress" bind:delKey="delKey"> </keyboard>
-      </view> -->
-    <!-- </view> -->
-
-  </view>
-
-
-
-
-
-
-
-  <!-- <button type="primary" bindtap="showKeyboard"> ClickMe! </button> -->
 
 
 </view>

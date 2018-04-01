@@ -91,3 +91,13 @@
   position: relative;
   font-size: 20px;
 }
+
+.outgarage-btn{
+  float: right;
+  padding: 20rpx;
+  font-size: 40rpx;
+  border-radius: 10px;
+  color:white;
+  background-color:lightskyblue;
+  margin-right: 50rpx;
+}

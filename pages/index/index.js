@@ -5,40 +5,10 @@ Page({
   data: {
     markers: [],
     latitude: '',
+    numbers:300,
     longitude: '',
-    textData: {},
-    controls: [{
-      id: 1,
-      iconPath: '/imgs/location.png',
-      position: {
-        left: 10,
-        top: 410,
-        width: 30,
-        height: 30
-      },
-      clickable: true
-    }, {
-      id: 2,
-      iconPath: '/imgs/serach.png',
-      position: {
-        left: 10,
-        top: 380,
-        width: 30,
-        height: 30
-      },
-      clickable: true
-      }, {
-        id: 3,
-        iconPath: '/imgs/avatar.png',
-        position: {
-          left: 10,
-          top: 440,
-          width: 40,
-          height: 40
-        },
-        clickable: true
-      }]
-
+    keyworld:'',
+    address:''
   },
   makertap: function (e) {
     var id = e.markerId;
@@ -48,39 +18,59 @@ Page({
   onLoad: function (option) {
     console.log(option)
     var location = ""
-    if (option && option.keywords) {
-      location = option.keywords.split(",")
+    if (option && option.keyworld) {
+      location = option.location.split(",")
       this.setData({
         markers: [{
-          // iconPath: "../../imgs/marker_checked.png",
+          iconPath: "../../imgs/marker_checked.png",
           id: 0,
           latitude: location[1],
           longitude: location[0],
-          width: 50,
-          height: 50
+          width: 30,
+          height: 30
         }],
         latitude: location[1],
-        longitude: location[0]
+        longitude: location[0],
+        keyworld: option.keyworld,
+        address: option.address
       })
+
     } else {
-      var  that = this
-      wx.getLocation({
-        type: 'wgs84',
-        success: function (res) {
-          var latitude = res.latitude
-          var longitude = res.longitude
-          var speed = res.speed
-          var accuracy = res.accuracy
-          console.log(res)
-          that.setData({
-            latitude: latitude,
-            longitude: longitude
-          })
-        }
-      })
+      // var  that = this
+      // wx.getLocation({
+      //   type: 'wgs84',
+      //   success: function (res) {
+      //     var latitude = res.latitude
+      //     var longitude = res.longitude
+      //     var speed = res.speed
+      //     var accuracy = res.accuracy
+      //     console.log(res)
+      //     that.setData({
+      //       latitude: latitude,
+      //       longitude: longitude
+      //     })
+      //   }
+      // })
       // showMarkerInfo()
       //this.data.markers[3].iconPath = app.globalData.userInfo.avatarUrl
-      
+      var that = this;
+      var myAmapFun = new amapFile.AMapWX({ key: '8c6ff40972a7b06107a52c9b50c1488c' });
+      myAmapFun.getRegeo({
+        success: function (data) {
+          //成功回调
+          console.log("data",data)
+          that.setData({
+            latitude: data[0].latitude,
+            longitude: data[0].longitude,
+            address: data[0].regeocodeData.aois[0].name
+
+          })
+        },
+        fail: function (info) {
+          //失败回调
+          console.log(info)
+        }
+      })
     }
   },
   showMarkerInfo: function (data, i) {
@@ -107,20 +97,11 @@ Page({
       markers: markers
     });
   },
-  controltap(e) {
-    console.log(e)
-    switch(e.controlId){
-      case 1:
-        this.onLoad()
-        break
-      case 2:
-        this.tosearch()
-        break
-      case 3:
-        this.touserinfo()
-    }
-
-
+  mylocation(){
+    this.onLoad()
+  },
+  touserinfo(){
+    this.touserinfo()
   },
   tosearch() {
     wx.navigateTo({
@@ -130,6 +111,19 @@ Page({
   touserinfo() {
     wx.navigateTo({
       url: '../../pages/profile/profile'
+    })
+  },
+  gotoaddress(){
+    wx.openLocation({ //出发wx.openLocation API
+
+      latitude: Number(this.data.latitude), //坐标纬度（从地图获取坐标）
+
+      longitude: Number(this.data.longitude), //坐标经度（从地图获取坐标）
+
+      name: this.data.keyworld, //打开后显示的地址名称
+
+      address: this.data.address //打开后显示的地址汉字
+
     })
   }
 

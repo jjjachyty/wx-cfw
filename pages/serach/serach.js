@@ -1,7 +1,9 @@
 var amapFile = require('../../libs/amap-wx.js');
 Page({
   data: {
-    tips: {}
+    tips:'',
+    location:'',
+    keyworld:''
   },
   onLoad: function () {
 
@@ -26,8 +28,11 @@ Page({
     })
   },
   bindSearch: function (e) {
-    var keywords = e.currentTarget.dataset.keywords;
-    var url = '../../pages/index/index?keywords=' + keywords;
+    var location = e.currentTarget.dataset.location;
+    var name = e.currentTarget.dataset.name;
+    var address = e.currentTarget.dataset.address;
+
+    var url = '../../pages/index/index?location=' + location + "&keyworld=" + name + "&address=" + address;
     console.log(e,url)
     wx.redirectTo({
       url: url

@@ -1,0 +1,33 @@
+<view class='chosecar'>
+  <scroll-view scroll-y class="scroll-view" scroll-into-view="{{toView}}">
+
+      <view class="zan-panel-title">选择车</view>
+      <view class="zan-btns">
+        <button class="zan-btn primary-btn" bindtap="saveCarNumber" data-name="渝DDZ732">
+          渝DDZ732
+        </button>
+
+        <button class="zan-btn primary-btn" bindtap="saveCarNumber" data-name="渝DDZ731">
+          渝DDZ731
+        </button>
+                <button class="zan-btn primary-btn" bindtap="saveCarNumber" data-name="渝DDZ731">
+          渝DDZ731
+        </button>
+                <button class="zan-btn primary-btn" bindtap="saveCarNumber" data-name="渝DDZ731">
+          渝DDZ731
+        </button>
+      </view>
+      <view class="zan-panel-title">其他车</view>
+
+      <view class="zan-cell zan-field field">
+        <view bindtap='showKeyboard' placeholder="请输入车牌号:如 渝DDZ731" class="zan-field__input input">
+          <text class='placeholder' hidden='{{!showPlaceHolder}}'>{{placeholder}}</text> {{parkCarNumber}}
+        </view>
+        <view class="zan-cell__ft">
+          <button id="saveBtn" class="zan-btn save-btn" hidden='{{!showSave}}' bindtap='saveCarNumber' data-name="{{parkCarNumber}}">确定</button>
+        </view>
+      </view>
+      <keyboard id="keyboard" bind:keyPress="keyPress" bind:delKey="delKey"> </keyboard>
+      <view id="intoview"></view>
+      </scroll-view>
+</view>

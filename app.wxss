@@ -29,13 +29,3 @@
 }
 
 
-.placeholder{  
-  color:gainsboro;  
-}
- .input{
-   border: 1px solid gainsboro;
-   font-weight: 200rpx;
-   font-size: 40rpx;
-   text-align:center;
-
- }

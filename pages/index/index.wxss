@@ -13,48 +13,105 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 10px;
   height: 80px;
   background: #fff;
-  padding: 0 15px;
+  padding: 20rpx;
+  opacity: 0.88;
 }
 
-.section{
+.mylocation{
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 20px;
-  height: 80px;
-  background: #fff;
-  padding: 0 15px;
+  width: 70rpx;
+  bottom: 110px;
+  height: 70rpx;
+  padding: 0;
+  margin: 20rpx;
+  opacity: 0.88;
 }
-.section input{
-  width:90%;
-  margin:5px auto;
-  /* border:1px solid #c3c3c3; */
-  background-color: black;
-  height:30px;
-  border-radius: 3px;
-  padding: 0 5px;
-}
-
-
-
-
-
-text{
-  margin: 5px 0;
-  display: block;
-  font-size:12px;
-}
-.h1{
-  margin: 15px 0;
-  font-size:15px;
+.userinfo{
+  position: absolute;
+  left: 85%;
+  width: 70rpx;
+  bottom: 110px;
+  height: 70rpx;
+  margin: 20rpx;
+  padding: 0;
+  opacity: 0.88;
 }
 
 
-.text_box{
-  margin: 10px 25px;
-  border-bottom:1px solid #c3c3c3;
-  padding-bottom:10px
+
+.serach{
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: 50rpx;
+  padding: 10rpx;
+  top: 40px;
+  width: 60%;
+  left: 20%;
+  font-size: 45rpx;
+  border: 2px solid lightslategrey;
+  color: darkslategrey;
+  opacity: 0.8;
+  background-color: white;
+}
+.serach-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.location{
+  padding-right: 40rpx;
+  color: green;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  text-align: left;
+}
+.avatar{
+  padding-right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  color: green;
+}
+.freeParktips{
+  font-size: 20rpx;
+  color: green;
+}
+.freePark{
+  font-size: 60rpx;
+  color: green;
+}
+.address{
+  padding-top: 10rpx;
+  font-size: 35rpx;
+  color: grey;
+}
+
+
+.index-btn {
+ color: rgba(255, 255, 255, 1);
+ text-decoration: none;
+ background-color: rgba(30, 144, 255, 1);
+ font-family: "Microsoft YaHei", 微软雅黑, 宋体;
+ font-weight: 700;
+ font-size: 1.1em;
+ display: block;
+ border-radius: 8px;
+ /* let's use box shadows to make the button look more 3-dimensional */
+ box-shadow: 0px 2px 0px rgba(192, 192, 192, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+ text-align: center;
+ -webkit-transition: all .1s ease;
+ -moz-transition: all .1s ease;
+ transition: all .1s ease;
+
+}
+
+.index-btn:active{
+ box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+ position: relative;
+ top: 6px;
 }

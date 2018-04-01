@@ -1,90 +1,146 @@
-<import src="/ui/field/index.wxml" />
-<import src="/ui/select/index.wxml" />
-<import src="/ui/toptips/index.wxml" />
 <view class="container">
-<view class="zan-panel-title">选择价位</view>
-<view class="doc-description"></view>
-<view class="zan-panel">
-  <view class="zan-row">
-  <radio-group class="radio-group" bindchange="radioChange">
-    <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-blue">
-      
-        <view class="levle"><radio value="800" checked="true" color='orange'/>¥ 800</view>
-      </view>
-    </view>
-    <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-blue">
-        <view class="levle"><radio value="750"  color='orange'/>¥ 750</view>
-      </view>
-    </view>
-    <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-blue">
-        <view class="levle"><radio value="700"  color='orange'/>¥ 700</view>
-      </view>
-    </view>
-        <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="650" color='orange'/>¥ 650</view>
-      </view>
-    </view>
-
-        <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="600" color='orange'/>¥ 600</view>
-      </view>
-    </view>
-
-        <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="550" color='orange'/>¥ 550</view>
-      </view>
-    </view>
-
-            <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="500" color='orange'/>¥ 500</view>
-      </view>
-    </view>
-
-            <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="450" color='orange'/>¥ 450</view>
-      </view>
-    </view>
-
-            <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-green">
-        <view class="levle"><radio value="400" color='orange'/>¥ 400</view>
-      </view>
-    </view>
-
-            <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-red">
-        <view class="levle"><radio value="350" color='orange'/>¥ 350</view>
-      </view>
-    </view>
-
-            <view class="zan-col zan-col-8">
-      <view class="zan-panel zan-panel--without-border zan-c-red">
-        <view class="levle"><radio value="300" color='orange'/>¥ 300</view>
-      </view>
-    </view>
-
-  </radio-group>
-  </view>
-
+  <view class="zan-panel-title">选择价位 /月
+  <view class="reference"><i class="fa fa-search" />价位</view>
 </view>
-
-<view>
-  <view class="zan-panel-title">说明</view>
   <view class="zan-panel">
-    <text class='pay-description'>一共能停 300 个车位</text>
-  </view>
-</view>
+    <view class="zan-row">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-blue">
 
-    <view class="zan-btns">
-      <button class="zan-btn zan-btn--warn" bindtap='paypay'>确认付款</button>
+            <view class="levle">
+              <radio value="800" checked="true" color='orange' />¥ 800</view>
+          </view>
+        </view>
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-blue">
+            <view class="levle">
+              <radio value="750" color='orange' />¥ 750</view>
+          </view>
+        </view>
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-blue">
+            <view class="levle">
+              <radio value="700" color='orange' />¥ 700</view>
+          </view>
+        </view>
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="650" color='orange' />¥ 650</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="600" color='orange' />¥ 600</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="550" color='orange' />¥ 550</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="500" color='orange' />¥ 500</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="450" color='orange' />¥ 450</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="400" color='orange' />¥ 400</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-red">
+            <view class="levle">
+              <radio value="350" color='orange' />¥ 350</view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-8">
+          <view class="zan-panel zan-panel--without-border zan-c-red">
+            <view class="levle">
+              <radio value="300" color='orange' />¥ 300</view>
+          </view>
+        </view>
+
+      </radio-group>
     </view>
 
   </view>
+
+
+
+  <view class="zan-panel">
+    <view class="zan-row">
+      <radio-group class="radio-group" bindchange="radioChange">
+
+        <view class="zan-col zan-col-12">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio checked="true" value="650" color='green' />一年
+                 <text class='discount'>(9折优惠)</text>
+              </view>
+          </view>
+        </view>
+
+        <view class="zan-col zan-col-12">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="700" color='green' />半年</view>
+          </view>
+        </view>
+
+
+        <view class="zan-col zan-col-12">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+            <view class="levle">
+              <radio value="750" color='green' />3个月</view>
+          </view>
+        </view>
+
+
+        <view class="zan-col zan-col-12">
+          <view class="zan-panel zan-panel--without-border zan-c-green">
+
+            <view class="levle">
+              <radio value="30" color='green' />1个月</view>
+          </view>
+        </view>
+
+
+      </radio-group>
+    </view>
+  </view>
+
+
+
+
+  <view>
+    <view class="zan-panel-title">说明</view>
+    <view class="zan-panel">
+      <text class='pay-description'>一共能停 300 个车位</text>
+    </view>
+  </view>
+
+  <view class="zan-btns">
+    <button class="zan-btn zan-btn--warn" bindtap='paypay'>确认购买</button>
+  </view>
+
+</view>

@@ -7,22 +7,18 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="/imgs/profile.png" background-size="cover"></image>
       <text class="userinfo-nickname">15520010009</text>
     </block>
+    
   </view>
-  <view class="zan-panel zan-panel--without-border">
-
-    <view class="zan-cell level">
-      <text class='tips'>能停 </text>
-      <text class='can-park'>80%</text>
-      <text class='tips'>车位 </text>
-    </view>
-  </view>
+    <view class="zan-panel zan-panel--without-border">
+      <i class="fa fa-sign-out outgarage-btn" bindtap="outgarage" >出库</i>
+    </view>    
 
   <view class="zan-panel ">
     <view class="zan-row">
       <view class="zan-col zan-col-12" bindtap='toBuy'>
         <i class="fa fa-shopping-cart"></i>
 
-        购买/升级等级
+        购买/升级套餐
 
       </view>
       <view class="zan-col zan-col-12" bindtap='shareLocation'>
@@ -61,9 +57,9 @@
       <i class="fa fa-product-hunt car-color"></i>
 
     </view>
-    <view class='profile-menus'>
+    <!-- <view class='profile-menus'>
         <text>👣</text>
-    </view>
+    </view> -->
   </view>
 
   <view class="zan-panel">

@@ -17,3 +17,12 @@ view{
   font-size: 30rpx;
   color: grey;
 }
+.reference{
+  float: right;
+  font-size: 25rpx;
+  color:dodgerblue;
+}
+.discount{
+  font-size: 25rpx;
+  color: red;
+}

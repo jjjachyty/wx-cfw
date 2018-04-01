@@ -2,10 +2,36 @@
 <view class="map_container">
   <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location='true' markers="{{markers}}" controls='{{controls}}' bindcontroltap='controltap'  bindmarkertap="makertap"></map>
 </view>
-<cover-view class="map_text disable">
+
+<cover-view class="serach">
+<cover-image class='serach-icon' src="/imgs/serach.png" />      <cover-view wx:if="{{!keyworld}}" bindtap='tosearch'>
+    请输入停车地
+   </cover-view>
+   <cover-view wx:if="{{keyworld}}" bindtap='tosearch'>
+    {{keyworld}}
+   </cover-view>
 
 </cover-view>
-   <!-- <view class="map_text disable">
-  <text class="h1">{{textData.name}}</text>
-  <text>{{textData.desc}}</text>
-</view>    -->
+
+<cover-image class="mylocation" bindtap='mylocation' src="/imgs/location.png" />
+<cover-image class="userinfo" bindtap='touserinfo' src="/imgs/avatar.png" />
+
+
+
+
+<cover-view class="map_text zan-row">
+
+<cover-image class="zan-col icon zan-col-2" src="/imgs/address.png" />
+<cover-view class="zan-col address zan-col-20">
+    {{address}}
+</cover-view>
+
+<cover-view class="freeParktips zan-col zan-col-2 zan-col-offset-15">空位</cover-view>
+<cover-view class="freePark zan-col zan-col-4">265</cover-view>
+<cover-view class="freeParktips zan-col zan-col-3">360/月</cover-view>
+
+<cover-view class='zan-col zan-col-11  index-btn' bindtap='gotoaddress'>导航</cover-view>
+<cover-view class='zan-col zan-col-11 zan-col-offset-1 index-btn'>预定</cover-view> 
+
+</cover-view>
+
