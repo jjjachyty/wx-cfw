@@ -7,7 +7,8 @@ Page({
     warnSize: 'default',
     disabled: true,
     plain: false,
-    loading: false
+    loading: false,
+    e:''
   },
   bindphoneinput(e){
     if (e.detail.value.length == 11){
@@ -21,5 +22,8 @@ Page({
     wx.navigateTo({
       url: '../../pages/sigin/sigin?phone='+this.data.phone,
     })
-  }
+  },
+  getPhoneNumber: function (e) {
+    
+  }    
 })

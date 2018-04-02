@@ -1,4 +1,11 @@
 //app.js
+var WXBizDataCrypt = require('libs/WXBizDataCrypt.js')
+
+let appid = "wxb5f20ab8f1933772";
+let secret = "664c523b4fbeee2e6661f2166ff1da45";
+const Bmob = require('libs/bmob/bmob.js');
+Bmob.initialize("147d00d4168a717abfbd62618d061d52", "c581844c3ef0af9360a27362756a6227");
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -9,8 +16,24 @@ App({
     // 登录
     wx.login({
       success: res => {
-        console.log(res.code)
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        Bmob.Cloud.run('getSessionKey', { "appid": appid, "secret": secret,"jscode":res.code }, {
+          success: function (result) {
+            var sessionkey = result.session_key
+            var openid = result.openid
+            var pc = new WXBizDataCrypt(appid, sessionkey)
+
+            wx.getUserInfo({
+              success: function (res) {
+                console.log("res",res)
+                var data = pc.decryptData(res.encryptedData, res.iv)
+                console.log('解密后 data: ', data)
+              }
+              
+            })
+          },
+          error: function (error) {
+          }
+        })
       }
     })
     // 获取用户信息

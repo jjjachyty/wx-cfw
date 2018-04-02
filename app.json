@@ -1,7 +1,9 @@
 {
   "pages": [
+                "pages/login/login",
+                
         "pages/index/index",
-        
+            
         "pages/profile/profile",        
     "pages/pay/pay",
     "pages/garage/intogarage",
@@ -13,7 +15,6 @@
     "pages/tracks/tracks",
     "pages/car/car",
     "pages/sigin/sigin",
-    "pages/login/login",
     "pages/serach/serach"
   ],
   "window": {
